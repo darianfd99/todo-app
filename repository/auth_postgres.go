@@ -8,11 +8,11 @@ import (
 )
 
 const (
-	usersTable       = "users"
-	todoListsTable   = "todo_lists"
-	usersListwsTable = "users_lists"
-	todoItemsTable   = "todo_items"
-	listsItemsTable  = "item_lists"
+	usersTable      = "users"
+	todoListsTable  = "todo_lists"
+	usersListsTable = "users_lists"
+	todoItemsTable  = "todo_items"
+	listsItemsTable = "item_lists"
 )
 
 type AuthPostgres struct {
