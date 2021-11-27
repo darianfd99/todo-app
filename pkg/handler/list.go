@@ -8,10 +8,6 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-type getAllListsResponse struct {
-	Data []todo.TodoList `json:"data"`
-}
-
 func (h *Handler) getAllLists(c *gin.Context) {
 	userId, err := getUserId(c)
 	if err != nil {
@@ -24,7 +20,7 @@ func (h *Handler) getAllLists(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, getAllListsResponse{
+	c.JSON(http.StatusOK, getAllListResponse{
 		Data: lists,
 	})
 }
@@ -109,6 +105,7 @@ func (h *Handler) UpdateList(c *gin.Context) {
 		Status: "ok",
 	})
 }
+
 func (h *Handler) deleteList(c *gin.Context) {
 	userId, err := getUserId(c)
 	if err != nil {
