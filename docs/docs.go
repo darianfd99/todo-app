@@ -63,25 +63,25 @@ var doc = `{
                     "400": {
                         "description": "Bad Request",
                         "schema": {
-                            "$ref": "#/definitions/github.com_darianfd99_todo-app_pkg_handler.errorResponse"
+                            "$ref": "#/definitions/pkg_handler.errorResponse"
                         }
                     },
                     "404": {
                         "description": "Not Found",
                         "schema": {
-                            "$ref": "#/definitions/github.com_darianfd99_todo-app_pkg_handler.errorResponse"
+                            "$ref": "#/definitions/pkg_handler.errorResponse"
                         }
                     },
                     "500": {
                         "description": "Internal Server Error",
                         "schema": {
-                            "$ref": "#/definitions/github.com_darianfd99_todo-app_pkg_handler.errorResponse"
+                            "$ref": "#/definitions/pkg_handler.errorResponse"
                         }
                     },
                     "default": {
                         "description": "",
                         "schema": {
-                            "$ref": "#/definitions/github.com_darianfd99_todo-app_pkg_handler.errorResponse"
+                            "$ref": "#/definitions/pkg_handler.errorResponse"
                         }
                     }
                 }
@@ -108,7 +108,7 @@ var doc = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/pkg_handler.signInInput"
+                            "$ref": "#/definitions/github.com_darianfd99_todo-app_pkg_handler.signInInput"
                         }
                     }
                 ],
@@ -122,25 +122,25 @@ var doc = `{
                     "400": {
                         "description": "Bad Request",
                         "schema": {
-                            "$ref": "#/definitions/pkg_handler.errorResponse"
+                            "$ref": "#/definitions/github.com_darianfd99_todo-app_pkg_handler.errorResponse"
                         }
                     },
                     "404": {
                         "description": "Not Found",
                         "schema": {
-                            "$ref": "#/definitions/pkg_handler.errorResponse"
+                            "$ref": "#/definitions/github.com_darianfd99_todo-app_pkg_handler.errorResponse"
                         }
                     },
                     "500": {
                         "description": "Internal Server Error",
                         "schema": {
-                            "$ref": "#/definitions/pkg_handler.errorResponse"
+                            "$ref": "#/definitions/github.com_darianfd99_todo-app_pkg_handler.errorResponse"
                         }
                     },
                     "default": {
                         "description": "",
                         "schema": {
-                            "$ref": "#/definitions/pkg_handler.errorResponse"
+                            "$ref": "#/definitions/github.com_darianfd99_todo-app_pkg_handler.errorResponse"
                         }
                     }
                 }
@@ -181,25 +181,25 @@ var doc = `{
                     "400": {
                         "description": "Bad Request",
                         "schema": {
-                            "$ref": "#/definitions/pkg_handler.errorResponse"
+                            "$ref": "#/definitions/github.com_darianfd99_todo-app_pkg_handler.errorResponse"
                         }
                     },
                     "404": {
                         "description": "Not Found",
                         "schema": {
-                            "$ref": "#/definitions/pkg_handler.errorResponse"
+                            "$ref": "#/definitions/github.com_darianfd99_todo-app_pkg_handler.errorResponse"
                         }
                     },
                     "500": {
                         "description": "Internal Server Error",
                         "schema": {
-                            "$ref": "#/definitions/pkg_handler.errorResponse"
+                            "$ref": "#/definitions/github.com_darianfd99_todo-app_pkg_handler.errorResponse"
                         }
                     },
                     "default": {
                         "description": "",
                         "schema": {
-                            "$ref": "#/definitions/pkg_handler.errorResponse"
+                            "$ref": "#/definitions/github.com_darianfd99_todo-app_pkg_handler.errorResponse"
                         }
                     }
                 }
@@ -278,6 +278,13 @@ var doc = `{
                     "type": "string"
                 }
             }
+        }
+    },
+    "securityDefinitions": {
+        "ApiKeyAuth": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
         }
     }
 }`

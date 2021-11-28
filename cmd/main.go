@@ -29,7 +29,7 @@ func intitConfig() error {
 //@host localhost:8000
 //@BasePath /
 
-//@securityDefinitions.apiKey.apiKeyAuth
+//@securityDefinitions.apiKey ApiKeyAuth
 //@in header
 //@name Authorization
 
